@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Project One</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id = "header" class="header">
+        <div class="container">
+            <div class="nav">
+                
+                <ul class = "menu">
+                    
+                    <li>
+                        <a href="#">
+                            Моя страница
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Главная
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="#">
+                            Контакты
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Достижения
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#connection">
+                            Обратная связь
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#authentication">
+                            Аутентификация
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id = "about" class="about">
+        <div class="container">
+            
+            <p class = "fig">
+                <img src="img/bear.png" alt = "bear">
+                
+                <div class="table">
+                    <table border="1">
+                        <caption>Виды медведей</caption>
+
+                        <tr>
+                            <th>Вид</th>
+                            <th>Масса</th>
+                            <th>Цвет</th>
+                            <tr><td>Бурый</td><td>80 – 600 кг</td><td>Коричневый</td>
+                            <tr><td>Белый</td><td>150 - 250 кг</td><td>Белый</td>
+                            <tr><td>Белогрудый медведь</td><td>до 150 кг</td><td>Черный</td>
+                        </tr>
+                    </table>
+                </div>
+
+                
+                <div class="connection" id = "connection">
+                    <form action="https://httpbin.org/post" method="post">
+                        <p><b>Обратная связь</b></p>
+                        
+                        <p><b>ФИО:</b>
+                            <input type="text" maxlength="30" size="40" name="login">
+                        </p>
+                        <p><b>Email:</b>
+                            <input type="text" maxlength="30" size="40" name="login">
+                        </p>
+                        <p><b>Откуда вы узнали о нас</b></p>
+                        <input type="radio" id="contactChoice1"
+                        name="contact" value="email">
+                        <label for="contactChoice1">От друга</label>
+                   
+                        <input type="radio" id="contactChoice2"
+                        name="contact" value="phone">
+                        <label for="contactChoice2">Реклама ВК</label>
+                   
+                        <input type="radio" id="contactChoice3"
+                        name="contact" value="mail">
+                        <label for="contactChoice3">В университете</label>
+
+                        
+                        <p><b>Тип обращения</b></p>
+                        <select size="1" style="width: 100px;">
+                            <option disabled>Выберети один вариант</option>
+                            <option value="1">Жалоба</option>
+                            <option value="2">Предложение</option>
+                            <option value="3">Вопрос</option>
+                        </select>
+                    
+
+                    
+                        <p><b>Введите текст обращения</b></p>
+                        <p><textarea rows="10" cols = "100" name="text"></textarea></p>
+                    
+
+                    
+                        <p><b>Прикрепите файл</b></p>
+                        <input type="file" name="file">
+                    
+
+                    
+                        <fieldset>  
+                            <legend>
+                                <input type="checkbox"> Даю согласие на обработку перональных данных <br>
+                            </legend>
+                        
+                        <input type="submit">
+                        
+                    </form>
+                </div>
+
+                <div class="authentication" id = "authentication">
+                    <form action="https://httpbin.org/post" method="post">
+                        <p><b>Аутентификация</b></p>
+                        <b>Логин:</b>
+                        <input type="text" size="40" name="login">
+                        
+
+                        <p>
+                            <strong>Пароль:</strong>
+                            <input type="password" maxlength="20" size="39" name="password">
+                        </p>
+
+                        
+                        <fieldset>  
+                            <legend>
+                                <input type="checkbox"> Запомнить меня <br>
+                            </legend>
+                        </fieldset>
+                        
+
+                        <input type="submit">
+                    
+                    </form>
+                </div>
+            </p>
+            
+        </div>
+    </section>
+
+    <footer id = "footer" class="footer">
+        <div class="container">
+            <li>
+                Почта: mm.0055@yandex.ru 
+            </li>
+            <li>
+                Телефон: 8-999-333-77-00
+            </li>
+        </div>
+    </footer>
+</body>
+</html>
