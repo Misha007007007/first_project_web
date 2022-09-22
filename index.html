@@ -42,13 +42,13 @@
                     </li>
 
                     <li>
-                        <a href="#connection">
+                        <a href="connect.html">
                             Обратная связь
                         </a>
                     </li>
 
                     <li>
-                        <a href="#authentication">
+                        <a href="authentication.html">
                             Аутентификация
                         </a>
                     </li>
@@ -59,7 +59,6 @@
 
     <section id = "about" class="about">
         <div class="container">
-            
             <p class = "fig">
                 <img src="img/bear.png" alt = "bear">
                 
@@ -77,88 +76,7 @@
                         </tr>
                     </table>
                 </div>
-
-                
-                <div class="connection" id = "connection">
-                    <form action="https://httpbin.org/post" method="post">
-                        <p><b>Обратная связь</b></p>
-                        
-                        <p><b>ФИО:</b>
-                            <input type="text" maxlength="30" size="40" name="login">
-                        </p>
-                        <p><b>Email:</b>
-                            <input type="text" maxlength="30" size="40" name="login">
-                        </p>
-                        <p><b>Откуда вы узнали о нас</b></p>
-                        <input type="radio" id="contactChoice1"
-                        name="contact" value="email">
-                        <label for="contactChoice1">От друга</label>
-                   
-                        <input type="radio" id="contactChoice2"
-                        name="contact" value="phone">
-                        <label for="contactChoice2">Реклама ВК</label>
-                   
-                        <input type="radio" id="contactChoice3"
-                        name="contact" value="mail">
-                        <label for="contactChoice3">В университете</label>
-
-                        
-                        <p><b>Тип обращения</b></p>
-                        <select size="1" style="width: 100px;">
-                            <option disabled>Выберети один вариант</option>
-                            <option value="1">Жалоба</option>
-                            <option value="2">Предложение</option>
-                            <option value="3">Вопрос</option>
-                        </select>
-                    
-
-                    
-                        <p><b>Введите текст обращения</b></p>
-                        <p><textarea rows="10" cols = "100" name="text"></textarea></p>
-                    
-
-                    
-                        <p><b>Прикрепите файл</b></p>
-                        <input type="file" name="file">
-                    
-
-                    
-                        <fieldset>  
-                            <legend>
-                                <input type="checkbox"> Даю согласие на обработку перональных данных <br>
-                            </legend>
-                        
-                        <input type="submit">
-                        
-                    </form>
-                </div>
-
-                <div class="authentication" id = "authentication">
-                    <form action="https://httpbin.org/post" method="post">
-                        <p><b>Аутентификация</b></p>
-                        <b>Логин:</b>
-                        <input type="text" size="40" name="login">
-                        
-
-                        <p>
-                            <strong>Пароль:</strong>
-                            <input type="password" maxlength="20" size="39" name="password">
-                        </p>
-
-                        
-                        <fieldset>  
-                            <legend>
-                                <input type="checkbox"> Запомнить меня <br>
-                            </legend>
-                        </fieldset>
-                        
-
-                        <input type="submit">
-                    
-                    </form>
-                </div>
             </p>
-            
         </div>
     </section>
 
